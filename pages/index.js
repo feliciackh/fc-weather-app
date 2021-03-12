@@ -72,7 +72,6 @@ const Home = () => {
         .then(response => response.json(), )
         .then(data => {
           setGfycatToDisplay(data.gif)
-          console.log(data)
         })
         .catch(() => {
           console.log('Error getting gif')
@@ -114,7 +113,7 @@ const Home = () => {
         <p>And... so here we are, let's talk (more) weather!</p>
       </section>
       <section>
-        <StyledButton onClick={getWeatherAndGfycat}>What is today's weather?</StyledButton>
+        <StyledButton onClick={getWeatherAndGfycat}>What is today's weather looking like?</StyledButton>
         <DisplayWeather>
           {weatherToDisplay.toUpperCase()}
         </DisplayWeather>

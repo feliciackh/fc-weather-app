@@ -6,10 +6,8 @@ const gfycat = new Gfycat({client_id: gfycatId, client_secret: gfycatSecret});
 const randomNumber = Math.floor(Math.random() * 50);
 
 export default function handler(req, res) {
-  const weather = req.query.weather
-  console.log(req.query)
-  let options = {
-    search_text: weather,
+  const options = {
+    search_text: req.query.weather,
     count: 50,
     first: 50
   };
