@@ -119,11 +119,14 @@ const Home = () => {
         </DisplayWeather>
         <StyledImage src={gfycatToDisplay || ""} />
         {weatherToDisplay && (
-          <Hint underline pointer animation onClick={() => setWeatherToDisplay(randomGoodWeather)}>Hint: you can do better, trust me!</Hint>
+          <Hint underline pointer animation onClick={() => setWeatherToDisplay(randomGoodWeather)}>Good 'ol British weather... again?!?! Urgh... I feel ya, let's hack this!</Hint>
         )}
         {weatherToDisplay && isDisplayWeatherDiffFromOriginal && (
           <Hint>
-            p.s. I hope this makes your day (better weather === better day yes!)
+            p.s. hack it till you make it, they say 😉
+            <br />
+            I hope this makes your day (better weather === better day yes!)
+
           </Hint>
         ) }
       </section>
